@@ -8,121 +8,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="SC_Workshop_Project.css" />
     <title>SC_Workshop_Project</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        letter-spacing: 0.2vw;
-        line-height: 1.5vw;
-      }
-      h1 {
-        font-size: 3vw;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      h2 {
-        font-family: "Waiting for the Sunrise", cursive;
-        text-align: center;
-        overflow: hidden;
-        border-right: 0.15vw solid #ffa500;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: 0.15vw;
-        animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
-        font-weight: bold;
-        font-size: 1.5vw;
-      }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: #ffa500;
-        }
-      }
-      img {
-        width: 30vw;
-        height: 12.9vw;
-      }
-      p {
-        font-size: 0.75vw;
-        display: inline;
-      }
-      a {
-        font-size: 0.5vw;
-        text-decoration: none;
-      }
-      button {
-        background-color: #fff;
-        color: #000;
-        transition: all 200ms ease-in-out;
-        box-shadow: 0 0 0.3vw #646464;
-        outline: none;
-      }
-      button:hover {
-        background-image: linear-gradient(
-          to right,
-          #87968b 0%,
-          #666666 0%,
-          #87968b 100%
-        );
-        color: #fff;
-        background-position: right center;
-        cursor: pointer;
-      }
-      button,
-      button:hover {
-        border: none;
-        letter-spacing: 0.4vw;
-        text-align: center;
-        font-size: 0.75vw;
-        padding-left: 0.75vw;
-      }
-      .body-container {
-        max-width: 70vw;
-        display: block;
-        margin: auto;
-      }
-      .text-container {
-        max-width: 60.2vw;
-        display: block;
-        margin: auto;
-      }
-      .callout-1 {
-        height: 10.1vw;
-        width: 10.25vw;
-        display: block;
-        left: 8.5vw;
-        position: absolute;
-      }
-      .callout-2 {
-        height: 10.1vw;
-        width: 10.25vw;
-        display: block;
-        position: absolute;
-        right: 8.5vw;
-      }
-      .grid {
-        display: inline-grid;
-        grid-template-columns: repeat(2, 30vw);
-        grid-gap: 0.2vw 0.2vw;
-      }
-      #grid-1 {
-        grid-template-rows: repeat(2, 12.9vw);
-      }
-      #grid-2 {
-        grid-template-rows: 1, 12.9vw;
-      }
-    </style>
   </head>
   <body>
     <div class="body-container">
@@ -250,21 +137,6 @@
       <br />
       <br />
     </div>
-    <script>
-      function mailList(event) {
-        let name = prompt(`Thanks for the interest!  What's your name?`);
-        let email = prompt("... and your email address?");
-
-        if (name.length > 0 && email.length > 0) {
-          alert(
-            `Success! Thanks ${name}, you have been added to the mailing list!`
-          );
-        } else {
-          alert(`Please enter your details to subscribe to the mailing list`);
-        }
-      }
-      let button = document.querySelector("button");
-      button.addEventListener("click", mailList);
-    </script>
+    <script src="SC_Workshop_Project.js"></script>
   </body>
 </html>
